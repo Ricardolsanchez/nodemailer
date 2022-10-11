@@ -2,8 +2,9 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import EmailSender from "./SendEmail.js";
-require("dotenv").config();
 
+
+// mongodb+srv://ricksanchez:<password>@mern.tg7kcif.mongodb.net/test
 
 dotenv.config();
 const app = express();
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use(cors());
 const port = 5000;
 
+//DATABASE CONNECTION
 
 // **** Send APi
 
